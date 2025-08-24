@@ -1,0 +1,139 @@
+/* Import d'une police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #022469;
+  color: #f1f0f0;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: 
+    linear-gradient(135deg, rgba(0,74,173,0.7), rgba(0,47,108,0.7)), /* dégradé semi-transparent */
+    url("image.png") no-repeat center center/cover;       /* image en dessous */
+  color: #f1f1f1;   /* texte clair pour lisibilité */
+  padding: 50px 20px; /* espace plus grand pour voir l'image */
+  text-align: center;
+  position: relative;
+}
+
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* NAV */
+nav {
+  background: #ffd700;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: #004aad;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background: #e6c200;
+  transform: translateY(-2px);
+}
+
+/* SECTIONS */
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+section {
+  margin-bottom: 60px;
+  padding: 40px;
+  background: rgb(43, 42, 42);
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+section:hover {
+  transform: translateY(-5px);
+}
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  color: #004aad;
+  border-bottom: 3px solid #ffd700;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* TABLES */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+  background: white; /* ✅ toutes les cellules en blanc */
+  color: #333; /* ✅ texte sombre pour lisibilité */
+}
+th {
+  background: #004aad;
+  color: #ffd700;
+  font-weight: bold;
+}
+tr:hover {
+  background: #fff7d1; /* ✅ effet hover jaune */
+  transition: 0.2s ease;
+}
+
+/* FOOTER */
+footer {
+  background: #002f6c;
+  color: #ffd700;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+footer p {
+  opacity: 0.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+}
